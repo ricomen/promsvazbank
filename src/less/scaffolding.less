@@ -1,0 +1,82 @@
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html,
+body {
+  height: 100%;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+body {  
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-size: @fs;
+  font-family: @HN;
+  color: #3f3d3d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: bottom;
+}
+.container {
+  width: 960px;//изменть под проект
+  // padding: 0 15px;
+  .center();  
+  box-sizing: border-box;
+  
+  @media @tablet {
+    // margin: 0 15px;
+  }
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-family: @OS;
+}
+a {
+  margin: 0;
+  padding: 0;    
+  text-decoration: none;
+}
+input,
+textarea {
+  font-family: inherit;
+}
+.page-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1000px;
+  min-height: 754px;
+  background: url('../img/bg-1.jpg') no-repeat center 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+
+// градиент для текста
+// -------------------
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+// -------------------
+// a {  
+//   text-decoration: none;
+//   background-color: transparent;
+//   &:hover,
+//   &:focus {
+//     color: $link-color--hover;
+//     text-decoration: underline;
+//   }
+// }
+
+//от переполнения тпекстом
+// white-space: nowrap;
+// overflow: hidden;
+// text-overflow: ellipsis;

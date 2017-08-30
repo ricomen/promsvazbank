@@ -1,0 +1,48 @@
+.page-bg
+.promo
+  .container
+    h2.promo__title Потребительский Кредит от <b>16.9%</b>
+    .promo__layout
+      .promo__col.promo__col--left
+        ul.promo__list
+          li.promo__list-item Снижаем ставки на 1% каждый год
+          li.promo__list-item Оформи за <b>5 минут</b>
+      .promo__col.promo__col--right
+        ul.promo__list
+          li.promo__list-item Без комиссии, залога и поручителей
+          li.promo__list-item Оформи за <b>5 минут</b> Долгосрочное погашение
+.container
+  form.form(action="/" method="POST")
+    h2.form__title Онлайн заявка
+
+    .form__step Шаг 1 <b>Эти данные нужны нам, чтобы связаться с вами</b>
+
+    .form__field-wrap
+      label.form__label(for="surname") Фамилия
+      .form__field
+        input(type="text" id="surname")
+        .form__field-tooltip Поле обязательно для заполнения
+
+    .form__field-wrap
+      label.form__label(for="name") Имя
+      .form__field
+        input(type="text" id="name")
+        .form__field-tooltip Поле обязательно для заполнения
+
+    .form__field-wrap
+      label.form__label(for="middle-name") Отчество
+      .form__field
+        input(type="text" id="middle-name")
+        .form__field-tooltip Поле обязательно для заполнения
+
+    .form__field-wrap
+      .form__label Гражданство РФ
+      .form__field
+        input.form__radio(type="radio" name="citizenship" id="citizenship-n")
+        label.form__radio-label(for="citizenship-n") Нет
+        input.form__radio(type="radio" name="citizenship" id="citizenship-y")
+        label.form__radio-label(for="citizenship-y") Да
+        .form__field-tooltip Кредит может быть выдан только гражданам РФ
+
+    .form__button
+      button.form__btn(type="submit") Отправить заявку
