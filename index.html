@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title><!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+    <meta name="viewport" content="width=960">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>   
+    <header class="page-header">
+      <div class="container"><a class="logo" href="/"><img src="img/logo.svg" width="308" height="52" alt="Промсвязьбанк"></a></div>
+    </header>
+    <div class="page-bg"></div>
+    <div class="promo">
+      <div class="container">
+        <h2 class="promo__title">Потребительский Кредит от <b>16.9%</b></h2>
+        <div class="promo__layout">
+          <div class="promo__col promo__col--left">
+            <ul class="promo__list">
+              <li class="promo__list-item">Снижаем ставки на 1% каждый год</li>
+              <li class="promo__list-item">Оформи за <b>5 минут</b></li>
+            </ul>
+          </div>
+          <div class="promo__col promo__col--right">
+            <ul class="promo__list">
+              <li class="promo__list-item">Без комиссии, залога и поручителей</li>
+              <li class="promo__list-item">Оформи за <b>5 минут</b> Долгосрочное погашение</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <form class="form" action="/" method="POST">
+        <h2 class="form__title">Онлайн заявка</h2>
+        <div class="form__step">Шаг 1 <b>Эти данные нужны нам, чтобы связаться с вами</b></div>
+        <div class="form__field-wrap">
+          <label class="form__label" for="surname">Фамилия</label>
+          <div class="form__field">
+            <input type="text" id="surname">
+            <div class="form__field-tooltip">Поле обязательно для заполнения</div>
+          </div>
+        </div>
+        <div class="form__field-wrap">
+          <label class="form__label" for="name">Имя</label>
+          <div class="form__field">
+            <input type="text" id="name">
+            <div class="form__field-tooltip">Поле обязательно для заполнения</div>
+          </div>
+        </div>
+        <div class="form__field-wrap">
+          <label class="form__label" for="middle-name">Отчество</label>
+          <div class="form__field">
+            <input type="text" id="middle-name">
+            <div class="form__field-tooltip">Поле обязательно для заполнения</div>
+          </div>
+        </div>
+        <div class="form__field-wrap">
+          <div class="form__label">Гражданство РФ</div>
+          <div class="form__field">
+            <input class="form__radio" type="radio" name="citizenship" id="citizenship-n">
+            <label class="form__radio-label" for="citizenship-n">Нет</label>
+            <input class="form__radio" type="radio" name="citizenship" id="citizenship-y">
+            <label class="form__radio-label" for="citizenship-y">Да</label>
+            <div class="form__field-tooltip">Кредит может быть выдан только гражданам РФ</div>
+          </div>
+        </div>
+        <div class="form__button">
+          <button class="form__btn" type="submit">Отправить заявку</button>
+        </div>
+      </form>
+    </div>
+    <footer class="page-footer">
+      <div class="container"></div>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
